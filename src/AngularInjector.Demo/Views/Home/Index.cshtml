@@ -1,0 +1,23 @@
+﻿@using System.Web.Optimization
+@inherits System.Web.Mvc.WebViewPage
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html ng-app="app">
+<head>
+    <title></title>
+</head>
+<body>
+    <div ui-view>
+    </div>
+    @*@Scripts.Render("~/js/vendor")
+    @Scripts.Render("~/js/ng")*@
+    <script src="@Scripts.Url("~/js/vendor")"></script>
+        <script src="@Scripts.Url("~/js/ng")"></script>
+    
+    <script src="@Scripts.Url("~/js/templates")"></script>
+</body>
+</html>
