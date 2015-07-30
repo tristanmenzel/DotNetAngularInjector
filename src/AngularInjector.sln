@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularInjector.Tests", "An
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularInjector.Demo", "AngularInjector.Demo\AngularInjector.Demo.csproj", "{C4E4B692-7B58-4693-8AB8-A32C6F81802D}"
 EndProject
+Project("{FF286327-C783-4F7A-AB73-9BCBAD0D4460}") = "AngularInjector.Nuget", "AngularInjector.Nuget\AngularInjector.Nuget.nuproj", "{DA8B18FD-E804-4B34-962C-E0A740401E7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C4E4B692-7B58-4693-8AB8-A32C6F81802D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4E4B692-7B58-4693-8AB8-A32C6F81802D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4E4B692-7B58-4693-8AB8-A32C6F81802D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA8B18FD-E804-4B34-962C-E0A740401E7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA8B18FD-E804-4B34-962C-E0A740401E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA8B18FD-E804-4B34-962C-E0A740401E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA8B18FD-E804-4B34-962C-E0A740401E7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
