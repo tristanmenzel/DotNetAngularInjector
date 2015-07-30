@@ -8,7 +8,7 @@ Install-Package AngularInjector
 ```
 
 ##Usage
-*Create bundles*
+**Create bundles**
 ```c#
 public static class BundleConfig
 {
@@ -28,12 +28,25 @@ public static class BundleConfig
     }
 }
 ```
-*Reference bundles*
+**Reference bundles**
 ```razor
 @Scripts.Render("~/js/vendor")
 @Scripts.Render("~/js/ng")
 <script src="@Scripts.Url("~/js/templates")"></script>
 ```
-_Note: If you use @Scripts.Render on your templates and have optimizations turned off it will render a <script /> 
-link for each html fill which is probably not what you want. @Scripts.Url will mean you always get the bundled file regardless
+_Note: If you use @Scripts.Render on your templates and have optimizations turned off it will render a `<script />` 
+link for each html fill which is probably not what you want. `@Scripts.Url` will mean you always get the bundled file regardless
 of the optimizations setting value._
+
+**Annotate components**
+
+```js
+angular.module('app')
+    .controller('MyController', MyController);
+/*inject(MyController)*/
+function MyController($http, $stateParams){
+    var vm = this;
+    vm.message = 'Hello world';
+}
+```
+
