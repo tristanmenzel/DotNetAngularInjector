@@ -2,7 +2,7 @@
 Some custom bundles to allow better minification and bundling of angular resources when using asp.net bundling and optimization.
 
 ##Install
-_When I get around to putting this on nuget.org .... in the mean time you can grab the nupkg from the /dist/ folder._
+
 ```powershell
 Install-Package AngularInjector
 ```
